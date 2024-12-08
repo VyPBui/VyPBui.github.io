@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e791a5;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background: #F2F5EA;
+    color: #2C363F;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    background:#698F3F;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.navbar a:hover, .navbar a:focus {
+    background: #bbc7a4;
+}
+
+main {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.hero {
+    background: #698f3f;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #bbc7a4;
+}
+
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #F2F5EA;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: right;
+}
+
+
+/* Hero Image */
+.hero img {
+    max-width: 100%;  /* Ensure the hero image fills the available width */
+    height: auto;     /* Maintain aspect ratio */
+}
+
+/* Section Image */
+.section img {
+    width: 100%;  /* Ensures the image scales to the container's width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;  /* Prevents the image from exceeding the container width */
+    transition: transform 0.3s ease;  /* Smooth scale transition on hover */
+}
+
+/* Hover effect for section images */
+.section img:hover {
+    transform: scale(1.5);
+    margin-right: 40px;
+    margin-left: 26px;
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+    .navbar {
+        justify-content: flex-end;
+    }
+
+    main {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 50px;
+    }
+
+    .section {
+        text-align: center;
+        padding: 50px;
+    }
+
+    /* Adjust image in the section for larger screens */
+    .section img {
+        max-width: 40%;  /* Limit to 40% of the container on larger screens */
+    }
+}
+
+
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    ;
+}
+
+p{
+    text-align: center;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color:#698f3f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #bbc7a4;
+}
