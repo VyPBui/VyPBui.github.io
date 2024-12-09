@@ -71,26 +71,24 @@ footer {
 
 /* Hero Image */
 .hero img {
-    max-width: 100%;  /* Ensure the hero image fills the available width */
-    height: auto;     /* Maintain aspect ratio */
+    max-width: 100%;  
+    height: auto;     
 }
 
 /* Section Image */
 .section img {
-    width: 100%;  /* Ensures the image scales to the container's width */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%;  /* Prevents the image from exceeding the container width */
-    transition: transform 0.3s ease;  /* Smooth scale transition on hover */
+    width: 100%; 
+    height: auto; 
+    max-width: 100%;  
+    transition: transform 0.3s ease;  
 }
 
-/* Hover effect for section images */
 .section img:hover {
     transform: scale(1.5);
     margin-right: 40px;
     margin-left: 26px;
 }
 
-/* Media Query for Larger Screens */
 @media (min-width: 768px) {
     .navbar {
         justify-content: flex-end;
@@ -111,9 +109,8 @@ footer {
         padding: 50px;
     }
 
-    /* Adjust image in the section for larger screens */
     .section img {
-        max-width: 40%;  /* Limit to 40% of the container on larger screens */
+        max-width: 40%; 
     }
 }
 
